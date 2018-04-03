@@ -4,7 +4,7 @@ import functools as ft
 import re
 import csv
 
-converts marks to grade point
+#converts marks to grade point
 def grade(n):
 	if n==100:
 		return n//10
