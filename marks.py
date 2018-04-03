@@ -37,16 +37,16 @@ for i in range(1,last+1):
 	else:
 		usn+=str(i)
 
-	driver.get('http://results.vtu.ac.in/vitaviresultcbcs/index.php')	#fetches the page
+	driver.get('http://results.vtu.ac.in/vitaviresultcbcs/index.php')			#fetches the page
 	ele=driver.find_element_by_name('lns')
 	ele.send_keys(usn)
 	
 	try:
 		#try checks if the usn is valid or not
 		driver.find_element_by_id("submit").click()				
-		doc=driver.page_source									#gets the page source the web-site
+		doc=driver.page_source								#gets the page source the web-site
 
-		doc1=ft.reduce(lambda x,y:x+y,doc.split())				#getting the page source as a string without spaces
+		doc1=ft.reduce(lambda x,y:x+y,doc.split())					#getting the page source as a string without spaces
 		
 		x=re.search(regex,doc1)
 		if x:
@@ -65,7 +65,7 @@ for i in range(1,last+1):
 				x=bc4[4].text
 				l.append(x.rstrip(' '))
 			
-			l=list(map(int,l))									# l contains all subjects marks of a student
+			l=list(map(int,l))							# l contains all subjects marks of a student
 
 			gpa=0.0
 
