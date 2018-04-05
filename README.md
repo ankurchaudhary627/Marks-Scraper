@@ -5,7 +5,8 @@ The script uses Selenium webdriver and BeautifulSoup to scrape data from webpage
 
 You need to have the required libraries installed on your machine to run the script.
 
-You can install the libraries using : pip install "library-name" through your command prompt.
+You can install the libraries using the command:
+pip install "library-name"
 
 Script also requires you to download the Chrome webdriver, you can download it from : https://sites.google.com/a/chromium.org/chromedriver/downloads
 
