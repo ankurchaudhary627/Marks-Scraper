@@ -15,7 +15,7 @@ def grade(n):
 	else:
 		return 0
 
-#list to store USN, name and calculated sgpa of all students
+#list of tuples to store USN, name and calculated sgpa of all students
 sgpa=[]
 
 #regular expression to find Student name:
