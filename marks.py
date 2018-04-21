@@ -19,7 +19,7 @@ def grade(n):
 sgpa=[]
 
 #regular expression to find Student name:
-regex=re.compile("StudentName.*</b>(\w+)</td>")
+regex=re.compile('<tdstyle="padding-left:15px"><b>:</b>(\w+[.]?\w+)</td>')
 
 #last valid USN
 last=198
